@@ -1,5 +1,6 @@
 import java.awt.*;
 import java.awt.event.*;
+
 class GUI5
 {
     public static void main(String Arg[])
@@ -19,12 +20,10 @@ class MarvellousFrame
     }
 }
 
-class MarvellousListener extends WndowAdapter
+class MarvellousListener extends WindowAdapter
 {
     public void windowClosing(WindowEvent obj)
     {
         System.exit(0);
     }
-    
 }
-

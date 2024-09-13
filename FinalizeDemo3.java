@@ -1,26 +1,18 @@
 
-class FinalizeDemo4
+class FinalizeDemo3
 {
     public static void main(String arg[])
     {
-        try
-        {
-            Employee eobj1 = new Employee("Amit",78000,28,"Karve Road Pune");
-            Employee eobj2 = (Employee)eobj1.clone();
-            eobj1.Display();
-            eobj2.Display();
+        Employee eobj = new Employee("Amit",78000,28,"Karve Road Pune");
+        eobj.Display();
+        String str = "Marvellous";
 
-            System.out.println(eobj1.hashCode());
-            System.out.println(eobj2.hashCode());            
-        }
-        catch(CloneNotSupportedException obj)
-        {
-            System.out.println("Inside catch");
-        }   
+        System.out.println(eobj.getClass());
+        System.out.println(str.getClass());
+
     }
 }
-
-class Employee implements Cloneable
+class Employee
 {
     public String Name;
     public int Salary;
@@ -41,10 +33,5 @@ class Employee implements Cloneable
         System.out.println("Emplyee Age : "+this.Age); 
         System.out.println("Emplyee Salary : "+this.Salary);
         System.out.println("Emplyee Address : "+this.Address);                       
-    }
-
-    public Object clone() throws CloneNotSupportedException  //Syntax
-    {
-        return super.clone();
     }
 }

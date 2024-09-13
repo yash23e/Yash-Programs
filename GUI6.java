@@ -1,6 +1,8 @@
 import java.awt.*;
 import java.awt.event.*;
-class GUI4
+
+
+class GUI6
 {
     public static void main(String Arg[])
     {
@@ -24,10 +26,8 @@ class MarvellousFrame
 
 class MarvellousListener extends WindowAdapter
 {
-    
     public void windowClosing(WindowEvent obj)
     {
         System.exit(0);
     }
 }
-
