@@ -23,7 +23,8 @@ abstract class Demo
     {
         System.out.println("Inside gun of Demo");
     }
-    class Hello extends Demo{
+    class Hello extends Demo
+    {
         public Hello()
         {
             System.out.println("Inside Hello Constructor");
